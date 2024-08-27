@@ -1,0 +1,30 @@
+You will receive a sentence and a structure hierarchy. Assign the sentence to the most relevant label in the hierarchy.This sentence is taken from a full article, I will give you the full article as well, but please only reply to the structural tag of this sentence Then, output the structure labels, assignment reasoning, and supporting quotes from the document. DO NOT make up new structure labels or quotes.
+
+[Structure Hierarchy]
+{tree}
+
+[Examples]
+Example 1:
+Assign "[1] Main" to the document
+
+sentence: "This annual festival, which welcomes and celebrates large, gay men -- 'bears' -- on the tip of Cape Cod, ended Saturday."
+Response: [1] Main: This sentence directly describes a primary event, noting its conclusion, which is the focal point of the document.
+
+Example 2: Assign "[1] Cause_General" to the document
+
+Document: "But the league has also become one of the most prestigious summer internships for aspiring broadcasters."
+Response: [1] Cause_General: This sentence explains the background that contributes to the league's reputation, making it a relevant aspect of the broader discussion within the document.
+
+[Instructions]
+1. Structure labels must be present in the provided structure hierarchy. You MUST NOT make up new structure labels.
+2. The quote must be taken from the document. You MUST NOT make up quotes.
+
+[Full Document]
+{Document}
+
+[Sentence]
+{sentence}
+
+
+Double check that your assignment exists in the hierarchy!
+Your response:

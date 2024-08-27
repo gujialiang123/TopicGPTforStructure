@@ -1,0 +1,48 @@
+You will receive a Sentence and a set of top-level Structure labels from a Structure hierarchy. Your task is to identify generalizable Structure labels within the document that can act as top-level Structure in the hierarchy. If any relevant Structure are missing from the provided set, please add them. Otherwise, output the existing top-level Structure as identified in the document.
+For reference, I'll also give you the full Document.
+
+
+
+[Top-level Structure labels]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] Main" to the document
+
+Sentence: "This annual festival, which welcomes and celebrates large, gay men -- 'bears' -- on the tip of Cape Cod, ended Saturday."
+
+Your response: 
+[1] Main: This sentence directly describes a primary event, noting its conclusion, which is the focal point of the document.
+
+Example 2: Duplicate "[1] Cause_General", returning the existing structure label
+Sentence: "But the league has also become one of the most prestigious summer internships for aspiring broadcasters."
+Your response:
+[1] Cause_General: This sentence explains the background that contributes to the league's reputation, making it a relevant aspect of the broader discussion within the document.
+
+[Instructions]
+Step 1: Determine generalizable structure labels in the document:
+
+The structure labels must be as generalizable as possible and should not be document-specific.
+Each label must reflect a SINGLE structural feature instead of a combination of features.
+The new labels must have a level number, a short general label, and a description.
+The labels must be broad enough to accommodate future sub-labels.
+Step 2: Perform ONE of the following operations:
+
+If there are already duplicates or relevant structure labels in the hierarchy, output those labels and stop here.
+If the document contains no discernible structure label, return "None".
+Otherwise, add your label as a top-level structure label. Stop here and output the added label(s). DO NOT add any additional levels.
+Instructions for labeling:
+
+Review each document carefully to understand its primary structure and overall organization.
+Identify key structural elements that could serve as new top-level labels.
+Propose labels that enhance the understanding of the document’s structural organization and thematic layout.
+
+[Document]
+{Document}
+
+[Sentence]
+{Sentence}
+
+
+Please ONLY return the relevant or modified structure labels at the top level in the hierarchy.
+[Your response]

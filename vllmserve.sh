@@ -1,0 +1,1 @@
+python -m vllm.entrypoints.openai.api_server  --model NousResearch/Meta-Llama-3-8B-Instruct --dtype auto --api-key token-abc123

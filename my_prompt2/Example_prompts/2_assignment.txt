@@ -1,0 +1,37 @@
+You will receive a sentence and a structure hierarchy. Assign the sentence to the most relevant label in the hierarchy.This sentence is taken from a full article, I will give you the full article as well, but please only reply to the structural tag of this sentence Then, output the structure labels, assignment reasoning, and supporting quotes from the document. DO NOT make up new structure labels or quotes.
+
+[Structure Hierarchy]
+[1] Main Event
+[1] Consequence
+[1] Previous Event
+[1] Current Context
+[1] Historical Event
+[1] Expectation
+[1] Evaluation
+[1] Anecdotal Event
+
+[Examples]
+Example 1:
+Assign "[1] Main" to the document
+
+sentence: "This annual festival, which welcomes and celebrates large, gay men -- 'bears' -- on the tip of Cape Cod, ended Saturday."
+Response: [1] Main: This sentence directly describes a primary event, noting its conclusion, which is the focal point of the document.
+
+Example 2: Assign "[1] Cause_General" to the document
+
+Document: "But the league has also become one of the most prestigious summer internships for aspiring broadcasters."
+Response: [1] Cause_General: This sentence explains the background that contributes to the league's reputation, making it a relevant aspect of the broader discussion within the document.
+
+[Instructions]
+1. Structure labels must be present in the provided structure hierarchy. You MUST NOT make up new structure labels.
+2. The quote must be taken from the document. You MUST NOT make up quotes.
+
+[Full Document]
+Pope Francis: ‘There are images of the Madonna that are real, but the Madonna has never drawn [attention] to herself.’  Photograph: Grzegorz Gałązka/Sipa/Shutterstock Pope Francis  This article is more than  1 year old Virgin Mary apparitions ‘not always real’, says Pope after statue row This article is more than 1 year old Pontiff appears to reference a woman who drew pilgrims to a statue near Rome she claimed shed tears of blood Angela Giuffrida  in Rome Sun 4 Jun 2023 16.26 CEST Last modified on Tue 6 Jun 2023 12.52 CEST Share Apparitions of the Virgin Mary are “not always real”,  Pope Francis  has said, in what appears to be an indirect reference to a woman who drew thousands of pilgrims to a town near Rome to pray before a statue that she claimed shed tears of blood. “Don’t look there,” the pontiff said during an interview with Rai 1 on Sunday when asked about apparitions of the Virgin Mary. “There are images of the Madonna that are real, but the Madonna has never drawn [attention] to herself,” he said. “I like to see her with her finger pointing up to Jesus. When Marian devotion is too self-centred, it’s not good. Both in the devotion and in the people who carry it forward.” ‘The Saint’ leaves Italian town after case opened into statue’s ‘tears of blood’ Read more The interview was aired a few days after residents in Trevignano called on Francis to intervene against Maria Giuseppe Scarpulla, who has been nicknamed “the Saint” and “clairvoyant”. For five years she has organised monthly ceremonies in a park overlooking Lake Bracciano where a statue of the Virgin Mary sits in a glass case. The statue was bought by Scarpulla, known to her followers as Gisella Cardia, at a Catholic pilgrimage site in Medjugorje, Bosnia. Upon returning to  Italy, she claimed the Madonna made apparitions, wept tears of blood and was communicating messages to her. Marco Salvi, a local bishop, last week urged pilgrims to stop flocking to the site on the third of each month while his diocese investigates the phenomena surrounding the statue. Many people prayed before the statue in search of cures for serious illnesses. Scarpulla is facing a judicial investigation after a private investigator alleged that the blood stains on the statue came from a pig, and after some of her followers claimed they had been scammed. Scarpulla, who in the past had been convicted of bankruptcy fraud, created a foundation through which she collected donations, which she reportedly said would go towards setting up a centre for sick children. One man told La Repubblica that he and his wife had donated €123,000 (£106,000) to her foundation. “We were both ill, we trusted her, it was a clamorous error,” he said. skip past newsletter promotion Sign up to  This is Europe Free weekly newsletter The most pressing stories and debates for Europeans – from identity to economics to the environment Enter your email address  Sign up Privacy Notice:  Newsletters may contain info about charities, online ads, and content funded by outside parties. For more information see our  Privacy Policy. We use Google reCaptcha to protect our website and the Google  Privacy Policy  and  Terms of Service  apply. after newsletter promotion Scarpulla fled Trevignano in early April amid the furore only to return a few weeks later. She still hosts the ceremonies, although Saturday’s event was reported to be a flop, with only a handful of people in attendance. She said last month that she was undeterred by the investigation as well as an order for the glass case to be demolished. “I won’t budge an inch because I’m in the house of God and have the Madonna on my side,” she said. Explore more on these topics Pope Francis Christianity Italy Catholicism Europe Religion news Share Reuse this content More on this story More on this story Vatican excommunicates its former ambassador to US 5 Jul 2024 Vandals in Austria behead sculpture of Virgin Mary giving birth to Jesus 2 Jul 2024 Italian archbishop says he faces Vatican trial over Pope Francis criticism 20 Jun 2024 Pope calls on G7 leaders to ban use of autonomous weapons 14 Jun 2024 Did you hear the one about the pope? Francis tells audience of comedians it’s OK to laugh at God 14 Jun 2024 Pope Francis tells priests to keep homilies short as ‘people fall asleep’ 12 Jun 2024 Pope Francis allegedly tells group of priests ‘gossip is a women’s thing’ 31 May 2024 Vatican issues apology over Pope Francis’s ‘homophobic’ slur 28 May 2024 London-born boy who died aged 15 to become first millennial saint 23 May 2024 Vatican tightens rules on supernatural phenomena in crackdown on hoaxes 17 May 2024 Most viewed Most viewed World Europe US Americas Asia Australia Middle East Africa Inequality Global development News Opinion Sport Culture Lifestyle Original reporting and incisive analysis, direct from the Guardian every morning Sign up for our email Help Complaints & corrections SecureDrop Work for us   Privacy policy Cookie policy Terms & conditions Contact us All topics All writers Digital newspaper archive Facebook YouTube Instagram LinkedIn X Newsletters Advertise with us Search UK jobs Back to top © 2024 Guardian News & Media Limited or its affiliated companies. All rights reserved.  (dcr)
+
+[Sentence]
+Francis  This article is more than  1 year old Virgin Mary apparitions ‘not always real’, says Pope after statue row This article is more than 1 year old Pontiff appears to reference a woman who drew pilgrims to a statue near Rome she claimed shed tears of blood Angela Giuffrida  in Rome Sun 4 Jun 2023 16.26 CEST Last modified on Tue 6 Jun 2023 12.52 CEST Share Apparitions of the Virgin Mary are “not always real”,  Pope Francis  has said, in what appears to be an indirect reference to a woman who drew thousands of pilgrims to a town near Rome to pray before a statue that she claimed shed tears of blood.
+
+
+Double check that your assignment exists in the hierarchy!
+Your response:

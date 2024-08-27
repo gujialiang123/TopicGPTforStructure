@@ -1,0 +1,34 @@
+You will receive a list of structure labels that belong to the same level of a structure hierarchy. Your task is to merge structure labels that are paraphrases or near duplicates of one another. Return "None" if no modification is needed.
+
+Here are some examples: 
+[Example 1: Merging structure labels [1] Hypothetical Analysis and [1] Historical Contextand into [1] Evaluation
+structure List:
+[1] Hypothetical Analysis
+[1] Historical Context
+[1] Problem Identification
+
+Your response: 
+[1] Evaluation: evolution of the story ([1] Historical Context, [1] Hypothetical Analysis)
+
+
+[Example 2: Merging structure labels [2] Current Context and [2] previous Context into [2] context]
+[2] Current Context: Context related to the current text.
+[2] Digital Literacy: Context related to previous text
+
+
+[Your response] 
+[2] context: Discuss technology and its impact on society. ([2] Current Context, [2] previous Context)
+
+[Rules]
+- Each line represents a structure, with a level indicator and a structure label.
+- Perform the following operations as many times as needed: 
+    - Merge relevant structure labels into a single structure.
+    - Do nothing and return "None" if no modification is needed.
+- When merging, the output format should contain a level indicator, the updated label and description, followed by the original structure labels.
+
+
+[structure List]
+{topics}
+
+Output the modification or "None" where appropriate. Do not output anything else. 
+[Your response]
